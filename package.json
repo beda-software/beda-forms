@@ -1,0 +1,66 @@
+{
+  "name": "beda-renderer",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "playwright test",
+    "lint": "biome lint .",
+    "format": "biome format .",
+    "preextract": "sh ./scripts/preextract-merge-po.sh",
+    "extract": "lingui extract",
+    "compile": "lingui compile --typescript",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "yarn extract && yarn compile"
+  },
+  "workspaces": [
+    "contrib/*"
+  ],
+  "resolutions": {
+    "@lingui/core": "^4.3.0",
+    "@lingui/react": "^4.3.0",
+    "moment": "2.30.1",
+    "sdc-qrf": "1.1.0-alpha.3",
+    "styled-components": "6.1.11"
+  },
+  "peerDependencies": {
+    "@beda.software/fhir-questionnaire": "git+https://github.com/beda-software/fhir-questionnaire.git#76f7e715e744",
+    "@beda.software/fhir-react": "^1.11.0",
+    "@lingui/core": "^4.3.0",
+    "@lingui/react": "^4.3.0"
+  },
+  "dependencies": {
+    "@beda.software/emr-config": "*",
+    "@beda.software/fhir-questionnaire": "git+https://github.com/beda-software/fhir-questionnaire.git#76f7e715e744",
+    "@beda.software/web-item-controls": "^0.1.2",
+    "@lingui/core": "^4.3.0",
+    "@lingui/react": "^4.3.0",
+    "antd": "5.24.7",
+    "lodash": "^4.17.23",
+    "make-plural": "^8.1.0",
+    "property-expr": "^2.0.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sdc-qrf": "^1.1.0-alpha.3",
+    "sdc-smart-web-messaging-client": "1.0.1",
+    "styled-components": "^6.1.11",
+    "tiny-case": "^1.0.3",
+    "toposort": "^2.0.2",
+    "tslib": "^2.7.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
+    "@lingui/cli": "^4.3.0",
+    "@lingui/macro": "^4.3.0",
+    "@playwright/test": "^1.58.1",
+    "@types/fhir": "^0.0.41",
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "babel-plugin-styled-components": "^2.1.4",
+    "sass-embedded": "^1.99.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
