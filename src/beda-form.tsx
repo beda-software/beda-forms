@@ -70,6 +70,7 @@ import { I18nProvider } from "@lingui/react";
 import { i18n } from "@lingui/core";
 import { dynamicActivate } from "./services/i18n";
 
+
 type BedaFormProps = {
   questionnaire: fhir4.Questionnaire;
   questionnaireResponse: fhir4.QuestionnaireResponse | null;
@@ -117,6 +118,13 @@ function buildLaunchContextParameters(
 export const BedaForm = (props: BedaFormProps) => {
   const { questionnaire, questionnaireResponse, context, onResponseChange } =
     props;
+
+  const questionnaireRef = React.useRef(questionnaire);
+  const questionnaireKeyRef = React.useRef(0);
+  if (questionnaire !== questionnaireRef.current) {
+    questionnaireRef.current = questionnaire;
+    questionnaireKeyRef.current += 1;
+  }
 
   const baseResponse = React.useMemo<fhir4b.QuestionnaireResponse>(
     () =>
@@ -220,6 +228,7 @@ export const BedaForm = (props: BedaFormProps) => {
       <ThemeProvider>
         <Card>
           <QuestionnaireResponseForm
+            key={questionnaireKeyRef.current}
             questionnaireLoader={questionnaireServiceLoader(() =>
               Promise.resolve(
                 success(

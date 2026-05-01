@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect } from "react";
+import React from "react";
 import {
-  type SdcMessageType,
   SmartMessagingPhase,
   useSmartMessaging,
   type SdcRequestExtractResponsePayload,
@@ -59,63 +58,6 @@ export const App = () => {
       setErrorMessage(`${error.message}${suffix}`);
     },
   });
-  const params = new URLSearchParams(window.location.search);
-  const embeddedMode = params.get("embedded_mode");
-  console.log("questionnaire in ap", questionnaire);
-
-  const handleStatusHandshake = useCallback(() => {
-    return {
-      messageType: "status.handshake",
-      payload: {
-        embeddedMode,
-      },
-    };
-  }, [embeddedMode]);
-
-  const dispatchMessage = useCallback(
-    (messageType: SdcMessageType) => {
-      switch (messageType) {
-        case "status.handshake":
-          return {
-            messageType: "embedded.mode",
-            payload: {
-              embeddedMode,
-            },
-          };
-      }
-    },
-    [embeddedMode]
-  );
-
-  useEffect(() => {
-    const handleMessage = (event: MessageEvent) => {
-      // SECURITY: Always check the origin!
-      // Only accept messages from the origin passed in the URL
-      const params = new URLSearchParams(window.location.search);
-      const expectedOrigin = params.get("messaging_origin");
-
-      if (event.origin !== expectedOrigin) return;
-
-      const { messageType, messageId, data } = event.data;
-      console.log("Received message", event.data);
-
-      // Handle the logic based on messageType
-
-      // REPLY LOGIC:
-      // Requirement: Reply with same messageType and responseToMessageId
-      const response = {
-        messageType: messageType,
-        responseToMessageId: messageId, // Echo the original ID
-        data: { status: "success", payload: "Hello from React!" },
-      };
-
-      // Send back to the parent window
-      window.parent.postMessage(response, event.origin);
-    };
-
-    window.addEventListener("message", handleMessage);
-    return () => window.removeEventListener("message", handleMessage);
-  }, []);
 
   if (phase === SmartMessagingPhase.Disabled) {
     return <ErrorView message="Missing SDC SWM parameters." />;
@@ -126,7 +68,7 @@ export const App = () => {
   }
 
   if (!questionnaire) {
-    return <div>No Questionnaire</div>;
+    return <div>Awaiting questionnaire…</div>;
   }
 
   return (
