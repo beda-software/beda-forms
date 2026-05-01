@@ -1,6 +1,11 @@
+# #-#-#-#-#  messages.po  #-#-#-#-#
+# , fuzzy
+# , fuzzy
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2024-07-31 17:01+0200\n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +17,46 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
 
 #. js-lingui-explicit-id
 #: src/containers/QuestionnaireList/index.tsx:22
@@ -898,15 +943,21 @@ msgstr ""
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:16
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:29
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:53
+#: components/__tests__/questionnaire/custom-validation.test.ts:19
+#: components/__tests__/questionnaire/custom-validation.test.ts:32
+#: components/__tests__/questionnaire/custom-validation.test.ts:56
 #~ msgid "Has at least one lower case letter"
 #~ msgstr "Tiene al menos una letra minúscula"
 
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:75
+#: components/__tests__/questionnaire/custom-validation.test.ts:78
 #~ msgid "Has at least one number"
 #~ msgstr "Tiene al menos un número"
 
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:40
 #: src/utils/__tests__/questionnaire/custom-validation.test.ts:64
+#: components/__tests__/questionnaire/custom-validation.test.ts:43
+#: components/__tests__/questionnaire/custom-validation.test.ts:67
 #~ msgid "Has at least one uppercase letter"
 #~ msgstr "Tiene al menos una letra mayúscula"
 
@@ -1099,9 +1150,9 @@ msgstr ""
 #~ msgid "Monday"
 #~ msgstr "Lunes"
 
-#: src/utils/questionnaire.ts:179
+#: components/QuestionnaireResponseForm/BaseQuestionnaireResponseForm/utils.tsx:118
 #~ msgid "Must be a valid time (HH:mm:ss)"
-#~ msgstr ""
+#~ msgstr "Debe ser una hora válida (HH:mm:ss)"
 
 #: src/containers/FormList/index.tsx:27
 #: src/containers/HealthcareServiceList/index.tsx:31
@@ -1178,6 +1229,7 @@ msgstr ""
 #~ msgstr "Guardado"
 
 #: src/containers/SignIn/index.tsx:NaN
+#: src/containers/SignIn/index.tsx:52
 #~ msgid "On the next page, please, use one of the following credentials"
 #~ msgstr "En la siguiente página, por favor, utilice una de las siguientes credenciales"
 
@@ -1230,6 +1282,7 @@ msgstr ""
 #~ msgstr "Envase"
 
 #: src/containers/SignIn/index.tsx:NaN
+#: src/containers/SignIn/index.tsx:83
 #~ msgid "Password"
 #~ msgstr "Contraseña"
 
@@ -1489,6 +1542,7 @@ msgstr ""
 #~ msgstr "Selecciona hora"
 
 #: src/controls/Choice/index.tsx:NaN
+#: src/controls/Choice/index.tsx:25
 #~ msgid "Select..."
 #~ msgstr "Seleccionar..."
 
@@ -1702,9 +1756,9 @@ msgstr ""
 #~ msgid "Thursday"
 #~ msgstr "Jueves"
 
-#: src/utils/questionnaire.ts:179
+#: components/QuestionnaireResponseForm/BaseQuestionnaireResponseForm/utils.tsx:118
 #~ msgid "time"
-#~ msgstr ""
+#~ msgstr "hora"
 
 #: src/containers/PatientDetails/PatientOverviewDynamic/components/StandardCard/prepare.tsx:266
 #: src/containers/Scheduling/Availability/index.tsx:129
@@ -1792,6 +1846,7 @@ msgstr ""
 #~ msgstr "Usuario sin rol en el sistema"
 
 #: src/containers/SignIn/index.tsx:NaN
+#: src/containers/SignIn/index.tsx:55
 #~ msgid "Username"
 #~ msgstr "Nombre de usuario"
 
