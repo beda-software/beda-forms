@@ -204,7 +204,7 @@ test("renderer speaks SDC SMART Web Messaging", async ({ page, baseURL }) => {
   );
   expect(displayPayload.status).toBe("success");
 
-  const inputField = page.frameLocator("#renderer").getByLabel("Name", { exact: false });
+  const inputField = page.frameLocator("#renderer").locator('[data-linkid="name"] input');
   await expect(inputField).toBeVisible({ timeout: 30000 });
   const initialRenderCount = await getRendererRenderCount(page);
   if (initialRenderCount === null) {
