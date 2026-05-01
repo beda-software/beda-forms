@@ -26,15 +26,15 @@
     "styled-components": "6.1.11"
   },
   "peerDependencies": {
-    "@beda.software/fhir-questionnaire": "git+https://github.com/beda-software/fhir-questionnaire.git#76f7e715e744",
+    "@beda.software/fhir-questionnaire": "*",
     "@beda.software/fhir-react": "^1.11.0",
     "@lingui/core": "^4.3.0",
     "@lingui/react": "^4.3.0"
   },
   "dependencies": {
     "@beda.software/emr-config": "*",
-    "@beda.software/fhir-questionnaire": "git+https://github.com/beda-software/fhir-questionnaire.git#76f7e715e744",
-    "@beda.software/web-item-controls": "^0.1.2",
+    "@beda.software/fhir-questionnaire": "git+https://github.com/beda-software/fhir-questionnaire.git#7cb368f06e18",
+    "@beda.software/web-item-controls": "^0.1.6",
     "@lingui/core": "^4.3.0",
     "@lingui/react": "^4.3.0",
     "antd": "5.24.7",
