@@ -36,3 +36,7 @@ logs
 playwright-report
 test-results
 .playwright
+.gitnexus
+
+# locale files
+src/locale/**/*.ts
