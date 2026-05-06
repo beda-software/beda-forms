@@ -40,3 +40,6 @@ test-results
 
 # locale files
 src/locale/**/*.ts
+
+# emr-config
+contrib/emr-config/config.js
