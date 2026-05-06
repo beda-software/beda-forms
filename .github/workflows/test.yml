@@ -1,0 +1,23 @@
+name: test
+on: push
+jobs:
+  Playwright:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Enable Corepack
+        run: corepack enable
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: yarn
+      - name: Install gettext
+        run: sudo apt-get install -y gettext
+      - name: Install deps
+        run: yarn install
+      - name: Install Playwright
+        run: npx playwright@latest install --with-deps
+      - name: Run tests
+        run: yarn test
