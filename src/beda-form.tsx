@@ -1,58 +1,21 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo } from "react";
 import {
   fromQuestionnaireResponseFormData,
   type QuestionnaireResponseFormData,
 } from "@beda.software/fhir-questionnaire/components";
 import {
   toFirstClassExtension,
-  type ItemControlGroupItemComponentMapping,
   type ItemControlQuestionItemComponentMapping,
-  type QuestionItemComponentMapping,
 } from "sdc-qrf";
 import type { QuestionnaireContext } from "sdc-smart-web-messaging-client";
 import { QuestionnaireResponseForm } from "@beda.software/fhir-questionnaire";
 import { questionnaireServiceLoader } from "@beda.software/fhir-questionnaire/components";
 import { success } from "@beda.software/remote-data";
 import {
-  AudioRecorderUploader,
-  Barcode,
-  BloodPressure,
-  Col,
-  Display,
-  EditableGroup,
-  Grid,
-  GroupTable,
-  GroupTabs,
-  GroupWizard,
-  GroupWizardVertical,
-  GroupWizardWithTooltips,
-  Gtable,
-  InlineChoice,
-  InlineReference,
-  MainCard,
-  MDEditorControl,
-  PasswordInput,
-  QuestionBoolean,
-  QuestionChoice,
-  QuestionDateTime,
-  QuestionDecimal,
-  QuestionEmail,
-  QuestionInputInsideText,
-  QuestionInteger,
-  QuestionPhone,
-  QuestionQuantity,
-  QuestionReference,
-  QuestionSlider,
-  QuestionSolidRadio,
-  QuestionString,
-  QuestionText,
-  Row,
-  Section,
-  SectionWithDivider,
-  SubCard,
-  TextWithMacroFill,
-  TimeRangePickerControl,
-  UploadFileControl,
+  groupItemComponent as defaultGroupComponent,
+  questionItemComponents as defaultItemComponents,
+  itemControlQuestionItemComponents as defaultItemControlComponents,
+  itemControlGroupItemComponents as defaultGroupControlComponents,
 } from "@beda.software/web-item-controls/controls";
 import {
   AnxietyScore,
@@ -63,13 +26,12 @@ import {
 
 import { ThemeProvider } from "../theme/ThemeProvider";
 
-import { FormWrapper, GroupItemComponent } from "./FormWrapper";
+import { FormWrapper } from "./FormWrapper";
 import { Card } from "antd";
 import { sdcServiceProvider, serviceProvider } from "./services/service";
 import { I18nProvider } from "@lingui/react";
 import { i18n } from "@lingui/core";
 import { dynamicActivate } from "./services/i18n";
-
 
 type BedaFormProps = {
   questionnaire: fhir4.Questionnaire;
@@ -149,75 +111,17 @@ export const BedaForm = (props: BedaFormProps) => {
     [onResponseChange]
   );
 
-  const itemComponents: QuestionItemComponentMapping = useMemo(
-    () => ({
-      text: QuestionText,
-      string: QuestionString,
-      decimal: QuestionDecimal,
-      integer: QuestionInteger,
-      date: QuestionDateTime,
-      dateTime: QuestionDateTime,
-      time: QuestionDateTime,
-      choice: QuestionChoice,
-      "open-choice": QuestionChoice,
-      boolean: QuestionBoolean,
-      display: Display,
-      reference: QuestionReference,
-      quantity: QuestionQuantity,
-      attachment: UploadFileControl,
-    }),
-    []
-  );
-
   const itemControlComponents: ItemControlQuestionItemComponentMapping =
     useMemo(
       () => ({
-        phoneWidget: QuestionPhone,
-        email: QuestionEmail,
-        passwordWidget: PasswordInput,
-        slider: QuestionSlider,
-        "solid-radio-button": QuestionSolidRadio,
-        "inline-choice": InlineChoice,
-        "inline-reference": InlineReference,
-        "text-with-macro": TextWithMacroFill,
-        "radio-button": InlineChoice,
-        "check-box": InlineChoice,
-        "input-inside-text": QuestionInputInsideText,
-        "markdown-editor": MDEditorControl,
-        "audio-recorder-uploader": AudioRecorderUploader,
-        barcode: Barcode,
+        ...defaultItemControlComponents,
         markdown: MarkdownDisplay,
         "markdown-card": MarkdownCard,
-        "reference-radio-button": InlineReference,
         "anxiety-score": AnxietyScore,
         "depression-score": DepressionScore,
       }),
       []
     );
-
-  const groupControlComponents: ItemControlGroupItemComponentMapping = useMemo(
-    () => ({
-      col: Col,
-      row: Row,
-      gtable: Gtable,
-      table: Gtable,
-      grid: Grid,
-      section: Section,
-      "section-with-divider": SectionWithDivider,
-      "main-card": MainCard,
-      "sub-card": SubCard,
-      "blood-pressure": BloodPressure,
-      "time-range-picker": TimeRangePickerControl,
-      wizard: GroupWizard,
-      "wizard-with-tooltips": GroupWizardWithTooltips,
-      "wizard-navigation-group": GroupWizard,
-      "wizard-vertical": GroupWizardVertical,
-      "group-tabs": GroupTabs,
-      "group-table": GroupTable,
-      "editable-group": EditableGroup,
-    }),
-    []
-  );
 
   useEffect(() => {
     dynamicActivate("en");
@@ -241,10 +145,10 @@ export const BedaForm = (props: BedaFormProps) => {
             launchContextParameters={launchContextParameters}
             initialQuestionnaireResponse={baseResponse}
             onEdit={handleEdit}
-            widgetsByQuestionType={itemComponents}
-            widgetsByQuestionItemControl={itemControlComponents}
-            widgetsByGroupQuestionItemControl={groupControlComponents}
-            groupItemComponent={GroupItemComponent}
+            questionItemComponents={defaultItemComponents}
+            itemControlQuestionItemComponents={itemControlComponents}
+            itemControlGroupItemComponents={defaultGroupControlComponents}
+            groupItemComponent={defaultGroupComponent}
             FormWrapper={FormWrapper}
           />
         </Card>
