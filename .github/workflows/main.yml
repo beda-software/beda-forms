@@ -42,7 +42,7 @@ jobs:
           -f Dockerfile.web.release
           --push -t ${{ env.BUILD_IMAGE }} .
   Deploy:
-    if: github.ref == 'refs/heads/main' && ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.ref == 'refs/heads/main' && github.event.workflow_run.conclusion == 'success' }}
     needs: Release
     runs-on: ubuntu-latest
     steps:
