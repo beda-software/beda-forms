@@ -1,10 +1,16 @@
-# #-#-#-#-#  messages.po  #-#-#-#-#
+# #-#-#-#-#  1.po  #-#-#-#-#
+# #-#-#-#-#  1.po  #-#-#-#-#
+# #-#-#-#-#  1.po  #-#-#-#-#
+# , fuzzy
+# , fuzzy
 # , fuzzy
 # , fuzzy
 msgid ""
 msgstr ""
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  1.po  #-#-#-#-#: \n"
+"#-#-#-#-#  1.po  #-#-#-#-#: \n"
+"#-#-#-#-#  1.po  #-#-#-#-#: \n"
+"#-#-#-#-#  1.po  #-#-#-#-#: \n"
 "POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -17,7 +23,14 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  2.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"#-#-#-#-#  2.po  #-#-#-#-#: \n"
 "POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -30,14 +43,14 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  3.po  #-#-#-#-#: \n"
 "POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: es\n"
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  2.po  #-#-#-#-#: \n"
 "POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -50,7 +63,27 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
-"#-#-#-#-#  messages.po  #-#-#-#-#: \n"
+"#-#-#-#-#  3.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"#-#-#-#-#  2.po  #-#-#-#-#: \n"
+"POT-Creation-Date: 2026-05-01 12:37+0400\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: es\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+"#-#-#-#-#  3.po  #-#-#-#-#: \n"
 "POT-Creation-Date: 2026-05-01 12:37+0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -273,7 +306,7 @@ msgstr ""
 #~ msgid "Add break"
 #~ msgstr "Añadir pausa"
 
-#: src/controls/GroupTable/index.tsx:NaN
+#: src/controls/GroupTable/index.tsx:64
 #~ msgid "Add entry"
 #~ msgstr ""
 
@@ -386,8 +419,7 @@ msgstr ""
 #~ msgid "Are you sure you want to delete the document?"
 #~ msgstr "¿Estás seguro de que quieres eliminar el documento?"
 
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/index.tsx:134
-#: src/controls/GroupTable/hooks.tsx:NaN
+#: src/controls/GroupTable/hooks.tsx:615
 #~ msgid "Are you sure you want to delete this item?"
 #~ msgstr "¿Estás seguro que deseas eliminar este ítem?"
 
@@ -442,7 +474,6 @@ msgstr ""
 #~ msgid "Calories"
 #~ msgstr "Calorías"
 
-#: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:82
 #: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:87
 #~ msgid "Cancel"
 #~ msgstr "Cancelar"
@@ -668,8 +699,7 @@ msgstr ""
 #~ msgid "Default"
 #~ msgstr "Predeterminado"
 
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/index.tsx:140
-#: src/controls/GroupTable/hooks.tsx:NaN
+#: src/controls/GroupTable/hooks.tsx:618
 #~ msgid "Delete"
 #~ msgstr "Eliminar"
 
@@ -766,7 +796,7 @@ msgstr ""
 #~ msgid "Duration (minutes)"
 #~ msgstr "Duración (minutos)"
 
-#: src/controls/GroupTable/hooks.tsx:NaN
+#: src/controls/GroupTable/hooks.tsx:613
 #~ msgid "Edit"
 #~ msgstr "Editar"
 
@@ -1070,7 +1100,7 @@ msgstr ""
 #~ msgid "Last name"
 #~ msgstr "Apellido"
 
-#: src/controls/GroupTable/index.tsx:NaN
+#: src/controls/GroupTable/index.tsx:94
 #~ msgid "linkIdX or linkIdY not defined"
 #~ msgstr ""
 
@@ -1169,10 +1199,9 @@ msgstr ""
 #: src/containers/PatientDetails/PatientResources/utils.tsx:127
 #: src/containers/PatientDetails/PatientResources/utils.tsx:171
 #: src/containers/PatientDetails/PatientResources/utils.tsx:207
-#: src/containers/PatientList/index.tsx:60
+#: src/containers/PatientList/index.tsx:47
 #: src/containers/PractitionerList/index.tsx:34
 #: src/containers/QuestionnaireList/index.tsx:28
-#: src/containers/PatientList/index.tsx:47
 #~ msgid "Name"
 #~ msgstr "Nombre"
 
@@ -1181,13 +1210,11 @@ msgstr ""
 #~ msgid "New Appointment"
 #~ msgstr "Nuevo agendamiento"
 
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/index.tsx:137
 #: src/utils/questionnaire.ts:63
 #~ msgid "No"
 #~ msgstr "No"
 
 #: src/components/ResourceTable/index.tsx:65
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/controls.tsx:497
 #~ msgid "No data"
 #~ msgstr "Sin datos"
 
@@ -1229,7 +1256,7 @@ msgstr ""
 #~ msgstr "Guardado"
 
 #: src/containers/SignIn/index.tsx:NaN
-#: src/containers/SignIn/index.tsx:52
+#: src/containers/SignIn/index.tsx:104
 #~ msgid "On the next page, please, use one of the following credentials"
 #~ msgstr "En la siguiente página, por favor, utilice una de las siguientes credenciales"
 
@@ -1262,8 +1289,6 @@ msgstr ""
 #~ msgid "Order added"
 #~ msgstr "Orden añadida"
 
-#: src/containers/PatientDetails/PatientDetailsTabs/index.tsx:23
-#: src/containers/PatientDetails/PatientHeader/index.tsx:96
 #: src/containers/PatientDetails/PatientOverviewDynamic/components/StandardCard/prepare.tsx:297
 #~ msgid "Orders"
 #~ msgstr "Resultados"
@@ -1282,12 +1307,11 @@ msgstr ""
 #~ msgstr "Envase"
 
 #: src/containers/SignIn/index.tsx:NaN
-#: src/containers/SignIn/index.tsx:83
+#: src/containers/SignIn/index.tsx:123
 #~ msgid "Password"
 #~ msgstr "Contraseña"
 
 #: src/components/BaseLayout/Sidebar/SidebarTop/context.tsx:43
-#: src/containers/QuestionnaireBuilder/QuestionnaireSaveForm/index.tsx:67
 #~ msgid "Patient"
 #~ msgstr "Paciente"
 
@@ -1454,15 +1478,10 @@ msgstr ""
 #~ msgid "Saturday"
 #~ msgstr "Sábado"
 
-#: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:101
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/index.tsx:130
-#: src/containers/QuestionnaireBuilder/QuestionnaireSaveForm/index.tsx:98
-#: src/containers/SetPassword/index.tsx:31
 #: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:106
 #~ msgid "Save"
 #~ msgstr "Guardar"
 
-#: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:91
 #: src/components/BaseQuestionnaireResponseForm/FormFooter.tsx:96
 #~ msgid "Save as draft"
 #~ msgstr "Guardar borrador"
@@ -1542,7 +1561,7 @@ msgstr ""
 #~ msgstr "Selecciona hora"
 
 #: src/controls/Choice/index.tsx:NaN
-#: src/controls/Choice/index.tsx:25
+#: src/controls/Choice/index.tsx:55
 #~ msgid "Select..."
 #~ msgstr "Seleccionar..."
 
@@ -1686,7 +1705,7 @@ msgstr ""
 #~ msgid "System"
 #~ msgstr "Sistema"
 
-#: src/controls/GroupTable/index.tsx:NaN
+#: src/controls/GroupTable/index.tsx:52
 #~ msgid "Table View"
 #~ msgstr ""
 
@@ -1748,7 +1767,7 @@ msgstr ""
 #~ msgid "This itemControl is designed for non-repeatable groups"
 #~ msgstr ""
 
-#: src/controls/GroupTable/index.tsx:NaN
+#: src/controls/GroupTable/index.tsx:99
 #~ msgid "This itemControl is designed for repeatable groups, but this group is not repeatable"
 #~ msgstr ""
 
@@ -1846,13 +1865,12 @@ msgstr ""
 #~ msgstr "Usuario sin rol en el sistema"
 
 #: src/containers/SignIn/index.tsx:NaN
-#: src/containers/SignIn/index.tsx:55
+#: src/containers/SignIn/index.tsx:107
 #~ msgid "Username"
 #~ msgstr "Nombre de usuario"
 
-#: src/containers/PatientDetails/PatientOrders/index.tsx:61
-#: src/containers/PatientDetails/PatientResources/utils.tsx:281
 #: src/containers/PatientDetails/PatientOrders/index.tsx:63
+#: src/containers/PatientDetails/PatientResources/utils.tsx:281
 #~ msgid "Value"
 #~ msgstr "Valor"
 
@@ -1889,7 +1907,6 @@ msgstr ""
 #~ msgid "y.o."
 #~ msgstr "años"
 
-#: src/containers/QuestionnaireBuilder/QuestionnaireItemSettings/index.tsx:136
 #: src/utils/questionnaire.ts:63
 #~ msgid "Yes"
 #~ msgstr "Sí"
