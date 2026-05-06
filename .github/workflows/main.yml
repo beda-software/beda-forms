@@ -9,7 +9,7 @@ jobs:
   Release:
     runs-on: ubuntu-latest
     env:
-      BUILD_IMAGE: bedasoftware/forms-renderer:main
+      BUILD_IMAGE: bedasoftware/beda-forms:main
       DISABLE_ESLINT_PLUGIN: true
     steps:
       - uses: actions/checkout@v6
