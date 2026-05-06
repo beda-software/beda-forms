@@ -13,7 +13,7 @@ export default defineConfig({
     baseURL,
   },
   webServer: {
-    command: `pnpm dev --host 127.0.0.1 --port ${port} --strictPort`,
+    command: `yarn dev --host 127.0.0.1 --port ${port} --strictPort`,
     url: baseURL,
     reuseExistingServer: !process.env.CI,
   },
